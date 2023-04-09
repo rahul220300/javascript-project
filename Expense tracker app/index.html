@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker App</title>
+    <link rel="stylesheet" href="trakerStyle.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center mb-4">Expense Tracker</h1>
+        <form id="expenseForm">
+          <div class="row">       
+            <div class="col-md-6"> 
+              <label for="expenseTitle">Choose a Category</label>      
+              <select type="text" class="form-control name" id="expenseAmount"  required>
+                <option selected></option>
+                <option value="1">Movie</option>
+                <option value="2">food</option>
+                <option value="3">picnic</option>
+                <option value="4">chilling with family</option>
+                <option value="5">cricket</option>
+                <option value="6">football</option>
+              </select>
+            </div>
+            <div class="col-md-6">
+              <label for="expenseAmount">Amount</label>
+              <input type="number" class="form-control amount" id="expenseAmount" required>
+            </div>           
+          </div>
+          <div class="row mt-3">
+            <div class="col-md-12">
+              <label for="expenseDescription">Description</label>
+              <textarea class="form-control description" id="expenseDescription" rows="3"></textarea>
+            </div>
+          </div>
+          <div class="row mt-4">
+            <div class="col-md-12 text-center">
+              <button type="submit" class="btn btn-primary" id="submit">Add Expense</button>
+            </div>
+          </div>
+        </form>
+        <div id="expenseList" class="mt-5">
+          <h3 class="text-center mb-3">Expense List</h3>
+          <table class="table table-striped">
+            <thead>
+              <tr>
+                <th>Choose a Category</th>
+                <th>Amount</th>               
+                <th>Description</th>
+                <th>Delet Expense</th>
+                <th>Edit Expense</th>
+                                              
+              </tr>
+            </thead>
+            <tbody id="tbody">
+              <!-- Expense data will be dynamically added here -->
+             
+            </tbody>
+          </table>
+        </div>
+      </div>
+    <script src="tracker.js"></script>
+</body>
+</html>
+

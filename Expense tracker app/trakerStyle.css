@@ -1,0 +1,20 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-color: beige;
+
+}
+.container{
+border: 1px solid rgb(224, 215, 215);
+padding: 50px;
+margin: 20px;
+
+}
+.text-center{
+    color: rgb(44, 68, 204);
+}
+.form-control{
+    margin: 5px 0;
+    padding: 5px 0;
+    
+}
